@@ -1,4 +1,5 @@
 package com.company;
+import com.company.Abstract;
 
 public class Arab extends Abstract {
     public Arab(int value) {

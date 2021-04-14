@@ -3,6 +3,18 @@ import java.lang.Math;
 
 import java.util.ArrayList;
 
+enum RomanNumeral {
+    I(1), V(5), X(10), L(50), C(100), D(500), M(1000);
+
+    private int value;
+    RomanNumeral (int value){
+        this.value = value;
+    }
+    public int getValue () {
+        return value;
+    }
+}
+
 public class Rim extends Abstract {
     public Rim (int value){
         super(value);
@@ -77,17 +89,5 @@ public class Rim extends Abstract {
             result = translate(ff).concat(result);
         }
         return result;
-    }
-}
-
-enum RomanNumeral {
-    I(1), V(5), X(10), L(50), C(100), D(500), M(1000);
-
-    private int value;
-    RomanNumeral (int value){
-        this.value = value;
-    }
-    public int getValue () {
-        return value;
     }
 }
