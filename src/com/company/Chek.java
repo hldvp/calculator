@@ -20,12 +20,12 @@ public class Chek {
             for (int i=0; i<this.str.length(); i++){
                 try {
                     RomanNumeral r;
-                    r = RomanNumeral.valueOf(String.valueOf(str.charAt(i)));
+                    r = RomanNumeral.valueOf(String.valueOf(this.str.charAt(i)));
                     break;
                 }
                 catch (Exception e){
                     this.flag = "No Rim";
-                    System.out.println("The data is incorrect");
+                    System.out.println("The data is incorrect3");
                     System.exit(0);
                 }
             }
