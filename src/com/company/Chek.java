@@ -25,7 +25,7 @@ public class Chek {
                 }
                 catch (Exception e){
                     this.flag = "No Rim";
-                    System.out.println("The data is incorrect3");
+                    System.out.println("The data is incorrect");
                     System.exit(0);
                 }
             }

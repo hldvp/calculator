@@ -36,6 +36,10 @@ public class Rim extends Abstract {
             }
         }
         super.value = z;
+        if (super.value > 10){
+            System.out.println("The data is incorrect");
+            System.exit(0);
+        }
     }
 
     private String translate(int ff) {

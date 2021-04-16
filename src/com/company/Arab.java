@@ -18,6 +18,10 @@ public class Arab extends Abstract {
             }
         }
         super.value = r;
+        if (super.value > 10){
+            System.out.println("The data is incorrect");
+            System.exit(0);
+        }
     }
 
     @Override
